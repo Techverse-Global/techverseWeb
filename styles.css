@@ -779,6 +779,32 @@ i
 {
     color: #c5c3c3;
 }
+.drodown {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    /* width: fit-content; */
+    border: none;
+  }
+/* .drodown:hover {
+    color: white;
+} */
+  .dropdown-head {
+    /* background-color: #f0f0f0; */
+    /* padding: 10px; */
+    border: none;
+    /* border-bottom: 1px solid #686868; */
+  }
+  
+  .dropdown-content {
+    color: #00d6c4;
+    font-weight: bold;
+    margin-top: 0px;
+    /* background-color: white; */
+    border: none;
+    display: list-item;
+    display: none;
+  }
 
 
 
