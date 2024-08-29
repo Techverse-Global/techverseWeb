@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="overlay.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
 
     <link rel="stylesheet" href="fa-fonts/css/fontawesome.min.css">
@@ -12,347 +13,401 @@
     <link rel="stylesheet" href="fa-fonts/css/brands.css">
     <title>TechVerse</title>
 
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="container-flex">
-                <div class="logo">
-                    <a href="/">
-                        TechVerse
-                    </a>
-                </div>
 
-                <div class="nav-list">
-                    <div class="nav-list-flex">
-                        <a href="#" class="hover">All Paths</a>
-                        <a href="#" class="hover">About</a>
-                        <a href="#" class="hover">Community</a>
-                        <a href="#" class="hover">Support Us</a>
-                        <a href="#" class="hover">Sign in</a>
-                        <a href="#" class="mode">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-300 group-hover:text-gray-700" role="img" aria-labelledby="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u"><title id="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u">theme icon</title>
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
-                              </svg>
+    <div class="overlay">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    TechVerse
+                </a>
+
+                <i class="fa-solid fa-xmark" id="menuClose"></i>
+            </div>
+
+            <ul class="overlay-menu-container">
+                <li href="#" class="hover overlay-menu-item">
+                    <span>
+                        All Paths
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item">
+                    <span>
+                        About
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item available">
+                    <span>
+                        Community
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item available">
+                    <span>
+                        Support Us
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item">
+                    <span>
+                        Sign in
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav>
+            <div class="container">
+                <div class="container-flex">
+                    <div class="logo nav-logo">
+                        <a href="/">
+                            TechVerse
                         </a>
-                        <a href="#" class="btn">Get Started</a>
-
-                        <i class="fa-solid fa-bars"></i>
                     </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <section class="showcase">
-        <div class="container">
-            <div class="container-flex">
-                <div class="text">
-                    <h1 class="item">Hello World!</h1>        
-                    <h2 class="item">Welcome to TechVerse Global, your one stop hub for everything tech related</h2>
-                    
-                    <P class="item">Build your tech foundation with this our online courses. Designed and maintained by veteran teachers and the Techverse committee for anyone looking to kickstart their tech journey.</P>
-
-                    <p class="item">
-                        With inclusivity at our core, we're not just embracing diversity; we're celebrating it. Whether you're a seasoned professional or a fresh talent,
-                        there's a place for you at Techverse Global. Join us and be a part of a tech revolution where everyone thrives.
-                    </p>
-
-                    <a href="https://wa.me/message/HKFIU53EC3LCO1" class="btn item">Start Your Journey Now<i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="side-img">
-                    <img src="img/device-showcase.png" alt="A picture of devices">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="infosec">
-        <div class="container">
-            <div class="container-flex small">
-                <div class="one">
-                    <i class="medium fa-solid fa-book-atlas"></i>
-                    <h3>Useful Resources</h3>
-                    <p> We encompass a comprehensive suite of assets, tools, and support services designed to empower our stakeholders to succeed and thrive.</p>
-                </div>
-                <div class="two">
-                    <i class="medium fa-regular fa-clock"></i>
-                    <h3>25/8 Tutor Support </h1>
-                    <p>We ensures round-the-clock access to personalized assistance and guidance, empowering learners to excel beyond traditional limits.</p>
-                </div>
-                <div class="three">
-                    <i class="medium fa-solid fa-wrench"></i>
-                    <h3>
-                        Safe and Reliable Fixes
-                    </h3>
-                    <p>We ensures dependable solutions that prioritize security and stability, fostering trust and peace of mind for our users.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="review">
-        <div class="container">
-            <div class="container-flex">
-                <h2 class="review-header">what our clients say</h2>
-
-                <div class="review-bar bar"></div>
-
-                <div class="card-flex">
-                    <div class="card">
-                        <div class="stars item">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                           
-                        </div>
-
-                        <h3 class="item" >Empowering and Enlightening - A Game-Changing Experience!</h3>
-                        <p class="item" >
-                            Joining the programming workshops was a transformative journey. The instructors were knowledgeable and supportive, making complex concepts accessible. I gained invaluable skills and confidence to tackle real-world projects.
-                        </p>
-                        <div class="name item">
-                            Adeleke Sam
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="stars item">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <h3 class="item" >Lifesavers! Fast, Efficient, and Expert Service!</h3>
-                        <p class="item" >
-                            I was in a panic when my laptop crashed, but these repair services came to the rescue! The technicians diagnosed and fixed the issue swiftly, saving me time and money. Highly recommended!
-                        </p>
-                        <div class="name item">
-                            John Kelly 
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="stars item">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <h3 class="item" >Stunning Design, Seamless Functionality - Absolute Perfection!</h3>
-                        <p class="item" >
-                            From the initial consultation to the final launch, every step of the website development process was flawless. The team's attention to detail and commitment to excellence shines through in the finished product. Highly impressed!
-                        </p>
-                        <div class="name item">
-                            Folarin Esther
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="legacy">
-        <div class="container">
-            <div class="container-flex">
-                <div class="main">
-                    <div class="main-flex">
-                        <h2>what services do we offer?<span class="emoji"></span></h2>
-                        <div class="legacy-bar bar"></div>
-                    </div>
-                </div>
-
-                <div class="side">
-                    <div class="info">
-                        <i class="fa-solid fa-star medium"></i>
-                        <div class="text">
-                            <h3> Programming Workshops</h3>
-                            <P>Unlock your coding potential with our dynamic workshops, tailored for beginners and seasoned developers alike.</P>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <i class="fa-solid fa-star medium"></i>
-                        <div class="text">
-                            <h3>Laptop Repair Services</h3>
-                            <P>Trust our expert technicians to breathe new life into your devices, ensuring seamless performance and reliability.</P>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <i class="fa-solid fa-star medium"></i>
-                        <div class="text">
-                            <h3>Website Development Services</h3>
-                            <P>Embark on a digital journey with our bespoke website solutions, meticulously designed to captivate and convert.</P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="curriculum">
-        <div class="container">
-            <div class="container-flex">
-                <div class="curri-header">
-                    <h2>our curriculum</h2>
-                    <div class="curri-bar bar"></div>
-                </div>
-                
-
-                <div class="details">
-                    <div class="detail-card">
-                        <div class="haba">
-                            <div class="head">
-                                <h3>web development</h3>
-                                <div class="bar"></div>
-                            </div>
-
-                            <div class="drodown" onclick="toggleDropdown(1)">
-                                <div class="dropdown-head"><li><a class="hover">FrontEnd - 30,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown1"><ul><li style="border: none; display: inline;">Html</li> <br><li style="border: none; display: inline;">Css</li><br><li style="border: none; display: inline;">Javascript</li><br><li style="border: none; display: inline;">frameworks</li></ul></div>
-                              </div>
-                              <div class="drodown" onclick="toggleDropdown(2)">
-                                <div class="dropdown-head"><li><a class="hover">BackEnd - 30,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown2"><ul><li style="border: none; display: inline;">html</li><br><li style="border: none; display: inline;">php</li><br><li style="border: none; display: inline;">MySQL</li><br><li style="border: none; display: inline;">Servers</li></ul></div>
-                              </div>
-                              <div class="drodown" onclick="toggleDropdown(3)">
-                                <div class="dropdown-head"><li><a class="hover">FullStack - 50,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown3"><ul><li style="border: none; display: inline;">FrontEnd</li><br><li style="border: none; display: inline;">BackEnd</li></ul></div>
-                              </div>
     
-                            <!-- <ul>
-                                frontend
-                                backend
-                                fullstack
-                            </ul> -->
+                    <div class="nav-list">
+                        <div class="nav-list-flex">
+                            <a href="#" class="hover">All Paths</a>
+                            <a href="#" class="hover">About</a>
+                            <a href="#" class="hover">Community</a>
+                            <a href="#" class="hover">Support Us</a>
+                            <a href="#" class="hover">Sign in</a>
+                            <a href="#" class="mode">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-300 group-hover:text-gray-700" role="img" aria-labelledby="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u"><title id="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u">theme icon</title>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+                                  </svg>
+                            </a>
+                            <a href="#" class="btn">Get Started</a>
+    
+                            <i class="fa-solid fa-bars " id="menuOpen"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <section class="showcase">
+            <div class="container">
+                <div class="container-flex">
+                    <div class="text">
+                        <h1 class="item hello-world">Hello World!</h1>        
+                        <h2 class="item">Welcome to TechVerse Global, your one stop hub for everything tech related</h2>
+                        
+                        <P class="item">Build your tech foundation with this our online courses. Designed and maintained by veteran teachers and the Techverse committee for anyone looking to kickstart their tech journey.</P>
+    
+                        <p class="item">
+                            With inclusivity at our core, we're not just embracing diversity; we're celebrating it. Whether you're a seasoned professional or a fresh talent,
+                            there's a place for you at Techverse Global. Join us and be a part of a tech revolution where everyone thrives.
+                        </p>
+    
+                        <a href="https://wa.me/message/HKFIU53EC3LCO1" class="btn item">Start Your Journey Now<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+    
+                    <div class="side-img">
+                        <img src="img/device-showcase.png" alt="A picture of devices">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <section class="infosec">
+            <div class="container">
+                <div class="container-flex small">
+                    <div class="one">
+                        <i class="medium fa-solid fa-book-atlas"></i>
+                        <h3>Useful Resources</h3>
+                        <p> We encompass a comprehensive suite of assets, tools, and support services designed to empower our stakeholders to succeed and thrive.</p>
+                    </div>
+                    <div class="two">
+                        <i class="medium fa-regular fa-clock"></i>
+                        <h3>25/8 Tutor Support </h1>
+                        <p>We ensures round-the-clock access to personalized assistance and guidance, empowering learners to excel beyond traditional limits.</p>
+                    </div>
+                    <div class="three">
+                        <i class="medium fa-solid fa-wrench"></i>
+                        <h3>
+                            Safe and Reliable Fixes
+                        </h3>
+                        <p>We ensures dependable solutions that prioritize security and stability, fostering trust and peace of mind for our users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="review">
+            <div class="container">
+                <div class="container-flex">
+                    <h2 class="review-header">what our clients say</h2>
+    
+                    <div class="review-bar bar"></div>
+    
+                    <div class="card-flex">
+                        <div class="card">
+                            <div class="stars item">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                               
+                            </div>
+    
+                            <h3 class="item" >Empowering and Enlightening - A Game-Changing Experience!</h3>
+                            <p class="item" >
+                                Joining the programming workshops was a transformative journey. The instructors were knowledgeable and supportive, making complex concepts accessible. I gained invaluable skills and confidence to tackle real-world projects.
+                            </p>
+                            <div class="name item">
+                                Adeleke Sam
+                            </div>
                         </div>
                         
-                    </div>
-
-                    <div class="detail-card">
-                        <div class="haba">
-                            <div class="head">
-                                <h3>engineering</h3>
-                                <div class="bar"></div>
+                        <div class="card">
+                            <div class="stars item">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
-
-                            <div class="drodown" onclick="toggleDropdown(4)">
-                                <div class="dropdown-head"><li><a class="hover">Software Engineering  - 50,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown4"><ul><li style="border: none; display: inline;">Php</li> <br><li style="border: none; display: inline;">C/C++</li><br><li style="border: none; display: inline;">Javascript</li><br><li style="border: none; display: inline;">java</li></ul></div>
-                            </div>
-                              <div class="drodown" onclick="toggleDropdown(5)">
-                                <div class="dropdown-head"><li><a class="hover">Computer Engineering - 25,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown5"><ul><li style="border: none; display: inline;">Learn all the parts of a computer and gain experience in solving software and hardware issues associated with almost all devices</li></ul></div>
-                              </div>
-                        </div>
-                    </div>
-
-                    <div class="detail-card">
-                        <div class="haba">
-                            <div class="head">
-                                <h3>computer operations</h3>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="drodown" onclick="toggleDropdown(6)">
-                                <div class="dropdown-head"><li><a class="hover">Windows OS  - 25,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown6"><ul><li style="border: none; display: inline;">Become a computer operator by learning the full extent of how to use Windows OS including the use of Microsoft Office</li></ul></div>
-                            </div>
-                              <div class="drodown" onclick="toggleDropdown(7)">
-                                <div class="dropdown-head"><li><a class="hover">Linux OS - 25,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown7"><ul><li style="border: none; display: inline;">Become a computer operator by learning the full extent of how to use Linux OS efficiently</li></ul></div>
-                              </div>
     
-                            <!-- <ul>
-                                <li><a href="#" class="hover">windows Os</a></li>
-                                <li><a href="#" class="hover">linux OS</a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-
-                    <div class="detail-card four">
-                        <div class="haba">
-                            <div class="head">
-                                <h3>programming languages</h3>
-                                <div class="bar"></div>
+                            <h3 class="item" >Lifesavers! Fast, Efficient, and Expert Service!</h3>
+                            <p class="item" >
+                                I was in a panic when my laptop crashed, but these repair services came to the rescue! The technicians diagnosed and fixed the issue swiftly, saving me time and money. Highly recommended!
+                            </p>
+                            <div class="name item">
+                                John Kelly 
                             </div>
-                            <ul>
-                                <li><a class="hover">Python - 20,000CFA</a></li>
-                                <li><a class="hover">Java - 20,000CFA</a></li>
-                                <li><a class="hover">C - 20,000CFA</a></li>
-                                <li><a class="hover">C++ - 20,000CFA</a></li>
-                            </ul>
                         </div>
-                    </div>
-
-                    <div class="detail-card five">
-                        <div class="haba">
-                            <div class="head">
-                                <h3>misc.</h3>
-                                <div class="bar"></div>
-                            </div>
-
-                            <div class="drodown" onclick="toggleDropdown(8)">
-                                <div class="dropdown-head"><li><a class="hover">Graphic Design - 25,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown8"><ul><li style="border: none; display: inline;">
-                                    Become a graphic designer to visually communicate ideas or messages through images, typography, and layout.</li></ul></div>
-                              </div>
-                              <div class="drodown" onclick="toggleDropdown(9)">
-                                <div class="dropdown-head"><li><a class="hover">UI\UX Design - 35,000CFA</a></li></div>
-                                <div class="dropdown-content" id="dropdown9"><ul><li style="border: none; display: inline;">Become a UI/UX designer to make digital products, like websites or apps, easy and enjoyable to use for people</li></ul></div>
-                              </div>
-                              <div class="drodown" onclick="toggleDropdown(10)">
-                                <div class="dropdown-head"><li><a class="hover">Github Guide - 5,000CFA(Student Discount)</a></li></div>
-                                <div class="dropdown-content" id="dropdown10"><ul><li style="border: none; display: inline;">Effective Use of Github and Git</li></ul></div>
-                              </div>
-                              <div class="drodown" onclick="toggleDropdown(11)">
-                                <div class="dropdown-head"><li><a class="hover">Career Advice - Free</a></li></div>
-                                <div class="dropdown-content" id="dropdown11"><ul><li style="border: none; display: inline;">1hr guide with an expert to become which Developer</li></div>
-                              </div>
     
-                            <!-- <ul>
-                                <li><a href="#" class="hover"></a></li>
-                                <li><a href="#" class="hover"></a></li>
-                                <li><a href="#" class="hover"></a></li>
-                            </ul> -->
+                        <div class="card">
+                            <div class="stars item">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+    
+                            <h3 class="item" >Stunning Design, Seamless Functionality - Absolute Perfection!</h3>
+                            <p class="item" >
+                                From the initial consultation to the final launch, every step of the website development process was flawless. The team's attention to detail and commitment to excellence shines through in the finished product. Highly impressed!
+                            </p>
+                            <div class="name item">
+                                Folarin Esther
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="container-flex">
-                <div class="socials">
-                    <div class="circle">
-                        <a href="https://www.instagram.com/techverse_global?igsh=a3JuZGF3NzZrOXJ0"><i class="fa-brands fa-instagram"></i></a>
+        </section>
+    
+        <section class="legacy">
+            <div class="container">
+                <div class="container-flex">
+                    <div class="main">
+                        <div class="main-flex">
+                            <h2>what services do we offer?<span class="emoji"></span></h2>
+                            <div class="legacy-bar bar"></div>
+                        </div>
                     </div>
-                    <div class="circle">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                    <div class="circle">
-                        <a href="https://chat.whatsapp.com/FwvmpkojnJy9yFmvJh6lhu"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                    <div class="circle">
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="circle">
-                        <a href="https://github.com/Techverse-Global"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <div class="circle">
-                        <a href="https://www.linkedin.com/in/techverse-global-187989306"><i class="fa-brands fa-linkedin"></i></a>
+    
+                    <div class="side">
+                        <div class="info">
+                            <i class="fa-solid fa-star medium"></i>
+                            <div class="text">
+                                <h3> Programming Workshops</h3>
+                                <P>Unlock your coding potential with our dynamic workshops, tailored for beginners and seasoned developers alike.</P>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-star medium"></i>
+                            <div class="text">
+                                <h3>Laptop Repair Services</h3>
+                                <P>Trust our expert technicians to breathe new life into your devices, ensuring seamless performance and reliability.</P>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-star medium"></i>
+                            <div class="text">
+                                <h3>Website Development Services</h3>
+                                <P>Embark on a digital journey with our bespoke website solutions, meticulously designed to captivate and convert.</P>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p>Copyright &copy Techverse Global 2024</p>
-                <small>Powered and secured by Techverse Global</small>
             </div>
-        </div>
-    </footer>
+        </section>
+    
+        <section class="curriculum">
+            <div class="container">
+                <div class="container-flex">
+                    <div class="curri-header">
+                        <h2>our curriculum</h2>
+                        <div class="curri-bar bar"></div>
+                    </div>
+                    
+    
+                    <div class="details">
+                        <div class="detail-card">
+                            <div class="haba">
+                                <div class="head">
+                                    <h3>web development</h3>
+                                    <div class="bar"></div>
+                                </div>
+    
+                                <div class="drodown" onclick="toggleDropdown(1)">
+                                    <div class="dropdown-head"><li><a class="hover">FrontEnd - 30,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown1"><ul><li style="border: none; display: inline;">Html</li> <br><li style="border: none; display: inline;">Css</li><br><li style="border: none; display: inline;">Javascript</li><br><li style="border: none; display: inline;">frameworks</li></ul></div>
+                                  </div>
+                                  <div class="drodown" onclick="toggleDropdown(2)">
+                                    <div class="dropdown-head"><li><a class="hover">BackEnd - 30,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown2"><ul><li style="border: none; display: inline;">html</li><br><li style="border: none; display: inline;">php</li><br><li style="border: none; display: inline;">MySQL</li><br><li style="border: none; display: inline;">Servers</li></ul></div>
+                                  </div>
+                                  <div class="drodown" onclick="toggleDropdown(3)">
+                                    <div class="dropdown-head"><li><a class="hover">FullStack - 50,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown3"><ul><li style="border: none; display: inline;">FrontEnd</li><br><li style="border: none; display: inline;">BackEnd</li></ul></div>
+                                  </div>
+        
+                                <!-- <ul>
+                                    frontend
+                                    backend
+                                    fullstack
+                                </ul> -->
+                            </div>
+                            
+                        </div>
+    
+                        <div class="detail-card">
+                            <div class="haba">
+                                <div class="head">
+                                    <h3>engineering</h3>
+                                    <div class="bar"></div>
+                                </div>
+    
+                                <div class="drodown" onclick="toggleDropdown(4)">
+                                    <div class="dropdown-head"><li><a class="hover">Software Engineering  - 50,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown4"><ul><li style="border: none; display: inline;">Php</li> <br><li style="border: none; display: inline;">C/C++</li><br><li style="border: none; display: inline;">Javascript</li><br><li style="border: none; display: inline;">java</li></ul></div>
+                                </div>
+                                  <div class="drodown" onclick="toggleDropdown(5)">
+                                    <div class="dropdown-head"><li><a class="hover">Computer Engineering - 25,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown5"><ul><li style="border: none; display: inline;">Learn all the parts of a computer and gain experience in solving software and hardware issues associated with almost all devices</li></ul></div>
+                                  </div>
+                            </div>
+                        </div>
+    
+                        <div class="detail-card">
+                            <div class="haba">
+                                <div class="head">
+                                    <h3>computer operations</h3>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="drodown" onclick="toggleDropdown(6)">
+                                    <div class="dropdown-head"><li><a class="hover">Windows OS  - 25,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown6"><ul><li style="border: none; display: inline;">Become a computer operator by learning the full extent of how to use Windows OS including the use of Microsoft Office</li></ul></div>
+                                </div>
+                                  <div class="drodown" onclick="toggleDropdown(7)">
+                                    <div class="dropdown-head"><li><a class="hover">Linux OS - 25,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown7"><ul><li style="border: none; display: inline;">Become a computer operator by learning the full extent of how to use Linux OS efficiently</li></ul></div>
+                                  </div>
+        
+                                <!-- <ul>
+                                    <li><a href="#" class="hover">windows Os</a></li>
+                                    <li><a href="#" class="hover">linux OS</a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+    
+                        <div class="detail-card four">
+                            <div class="haba">
+                                <div class="head">
+                                    <h3>programming languages</h3>
+                                    <div class="bar"></div>
+                                </div>
+                                <ul>
+                                    <li><a class="hover">Python - 20,000CFA</a></li>
+                                    <li><a class="hover">Java - 20,000CFA</a></li>
+                                    <li><a class="hover">C - 20,000CFA</a></li>
+                                    <li><a class="hover">C++ - 20,000CFA</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="detail-card five">
+                            <div class="haba">
+                                <div class="head">
+                                    <h3>misc.</h3>
+                                    <div class="bar"></div>
+                                </div>
+    
+                                <div class="drodown" onclick="toggleDropdown(8)">
+                                    <div class="dropdown-head"><li><a class="hover">Graphic Design - 25,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown8"><ul><li style="border: none; display: inline;">
+                                        Become a graphic designer to visually communicate ideas or messages through images, typography, and layout.</li></ul></div>
+                                  </div>
+                                  <div class="drodown" onclick="toggleDropdown(9)">
+                                    <div class="dropdown-head"><li><a class="hover">UI\UX Design - 35,000CFA</a></li></div>
+                                    <div class="dropdown-content" id="dropdown9"><ul><li style="border: none; display: inline;">Become a UI/UX designer to make digital products, like websites or apps, easy and enjoyable to use for people</li></ul></div>
+                                  </div>
+                                  <div class="drodown" onclick="toggleDropdown(10)">
+                                    <div class="dropdown-head"><li><a class="hover">Github Guide - 5,000CFA(Student Discount)</a></li></div>
+                                    <div class="dropdown-content" id="dropdown10"><ul><li style="border: none; display: inline;">Effective Use of Github and Git</li></ul></div>
+                                  </div>
+                                  <div class="drodown" onclick="toggleDropdown(11)">
+                                    <div class="dropdown-head"><li><a class="hover">Career Advice - Free</a></li></div>
+                                    <div class="dropdown-content" id="dropdown11"><ul><li style="border: none; display: inline;">1hr guide with an expert to become which Developer</li></div>
+                                  </div>
+        
+                                <!-- <ul>
+                                    <li><a href="#" class="hover"></a></li>
+                                    <li><a href="#" class="hover"></a></li>
+                                    <li><a href="#" class="hover"></a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <div class="container-flex">
+                    <div class="socials">
+                        <div class="circle">
+                            <a href="https://www.instagram.com/techverse_global?igsh=a3JuZGF3NzZrOXJ0"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="circle">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="circle">
+                            <a href="https://chat.whatsapp.com/FwvmpkojnJy9yFmvJh6lhu"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <div class="circle">
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        <div class="circle">
+                            <a href="https://github.com/Techverse-Global"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="circle">
+                            <a href="https://www.linkedin.com/in/techverse-global-187989306"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <p>Copyright &copy Techverse Global 2024</p>
+                    <small>Powered and secured by Techverse Global</small>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="script.js"></script>
 
 </body>

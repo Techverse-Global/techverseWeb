@@ -37,7 +37,7 @@ p, li
     line-height: 35px;
 }
 
-h1
+.hello-world
 {
     font-size: 60px;
     margin-top: 70px;
@@ -932,6 +932,16 @@ i
     .container
     {
         /* background-color: red; */
+    }
+
+    body {
+        
+    }
+
+   
+
+    .main-content {
+        /* display: none; */
     }
 
     /* nav */
