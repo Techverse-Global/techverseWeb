@@ -12,7 +12,6 @@ document.querySelector('#menuClose').addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
     if (!overlay.contains(event.target)) {
-        console.log('overlay not clicked')
         closeOverlay()
     }
 })
@@ -35,17 +34,13 @@ document.addEventListener('click', (event) => {
 
 function closeOverlay() {
     document.querySelector('.overlay').style.width = '0';
-    document.querySelector('#menuOpen').style.display = 'block';
-    // document.querySelector('#menuClose').style.display = 'none';
-    document.body.classList.remove('no-scroll');
+    // document.body.classList.remove('no-scroll');
     document.querySelector('.nav-logo').style.display = 'block'
 }
 
 function openOverlay() {
     document.querySelector('.overlay').style.width = '100%';
-    // document.querySelector('#menuOpen').style.display = 'none';
-    document.querySelector('#menuClose').style.display = 'block';
-    document.body.classList.add('no-scroll');
+    // document.body.classList.add('no-scroll');
     document.querySelector('.nav-logo').style.display = 'none'
 }
 

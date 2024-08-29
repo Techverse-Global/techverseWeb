@@ -1,7 +1,7 @@
 @media screen and (max-width: 766px)
 {
     .overlay {
-        /* display: none; */
+        display: block;
         /* width: 0%; */
         background-color: #0a0e12;
         padding: 1rem 0;
@@ -10,10 +10,11 @@
         width: 100%;
         width: 0;
         position: fixed;
+        /* position: absolute; */
         /* top: 10%; */
         right: 0;
         transition: .7s;
-        /* z-index: 999; */
+        z-index: 1;
         overflow-x: hidden;
         max-width: 40vw;        
         border-top-left-radius: 15px;
@@ -23,7 +24,7 @@
     .overlay > .container {
         display: flex;
         flex-direction: column;
-        padding: 0px 3rem;
+        padding: 10px 3rem;
         gap: 2rem;
 
     }

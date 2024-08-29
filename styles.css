@@ -17,6 +17,7 @@ body
 }
 
 .overlay {
+    width: 0;
     display: none;
 }
 
@@ -29,7 +30,7 @@ a
 nav
 {
     /* border: 1px solid; */
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
 }
 
 p, li
@@ -91,7 +92,12 @@ li
 
 
 
-
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -100,6 +106,8 @@ li
 /* NAVBAR */
 nav{
     background-color: #0a0e12;
+    position: fixed;
+    width: 100vw;
 }
 
 nav
@@ -107,6 +115,7 @@ nav
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 div.logo
@@ -486,7 +495,6 @@ p
     
 }
 
-
 .review:hover
 .review-bar
 {
@@ -809,429 +817,3 @@ i
     display: list-item;
     display: none;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERY */
-@media screen and (max-width: 1154px)
-{
-    .container
-    {
-        /* background-color: red; */
-    }
-
-    .side-img
-    img
-    {
-        /* border: 1px solid; */
-        height: auto;
-        width: 400px;
-    }
-
-    div.text
-    .item
-    {
-        /* margin: 5px; */
-        padding: 15px;
-        /* border: 1px solid; */
-
-    }
-
-    div.text
-    h1.item
-    {
-        padding: 0 0 0 17px;
-        /* border: 1px solid; */
-        align-self: flex-start;
-    }
-}
-
-
-@media screen and (max-width: 1000px)
-{
-    .container
-    {
-        padding: 0;
-        /* background-color: red; */
-    }
-
-    div.logo
-    a
-    {
-        font-family: 'after_shokregular', '3dumbregular', 'amaranthregular', serif;
-        color: #fff; 
-    }
-
-
-    div.text
-    .item
-    {
-        /* margin: 5px; */
-        padding: 15px;
-        padding-left: 0;
-        /* border: 1px solid; */
-
-    }
-
-    div.text
-    h1.item
-    {
-        /* border: 1px solid; */
-        align-self: flex-start;
-        padding: 0;
-    }
-
-    div.text
-    a.btn
-    {
-        margin-left: 0px;
-        padding-left: 15px;
-    }
-}
-
-@media screen and (max-width: 766px)
-{
-    *
-    {
-        /* border: 1px solid; */
-
-    }
-
-    .container
-    {
-        /* background-color: red; */
-    }
-
-    body {
-        
-    }
-
-   
-
-    .main-content {
-        /* display: none; */
-    }
-
-    /* nav */
-    .nav-list-flex
-    a,
-    a.mode svg
-    {
-        display: none;
-    }
-
-    .nav-list-flex
-    {
-        /* border: 1px solid; */
-        justify-content: flex-end;
-    }
-
-    .nav-list-flex
-    .fa-bars
-    {
-        display:block;
-        padding: 10px;
-        border-radius: 5px;
-        color: #c5c3c3;
-    }
-
-    .nav-list-flex
-    .fa-bars:hover
-    {
-        background-color: #fffcfc3f;
-    }
-
-
-    /* showcase */
-    .showcase
-    {
-        border-radius: initial;
-    }
-
-    div.text
-    {
-        align-items: center;
-    }
-
-    div.text
-    h1.item
-    {
-        align-self: center;
-    }
-
-    div.text
-    h2
-    {
-        text-align: center;   
-    }
-
-    div.text
-    p
-    {
-        text-align: center;   
-        padding-bottom: 0;
-    }
-
-    div.text
-    a.btn
-    {
-        margin-top: 20px;
-        justify-self: flex-end;
-    }
-    
-    .side-img
-    {
-        display: none;
-    }
-
-
-    /* infosec */
-    .infosec
-    .container-flex
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .infosec
-    .container-flex
-    div
-    {
-        max-width: 100%;
-        padding: 10px;
-        /* flex: 1 1 auto; */
-    }
-
-
-    /* review */
-    .review
-    .container-flex
-    {
-        padding: 30px 10px;
-    }
-
-    .card-flex
-    {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .card
-    {
-        max-width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    .stars
-    {
-        /* border: 1px solid; */
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-
-    /* legacy */
-    .legacy
-    .container-flex
-    {
-        /* border: 1px solid; */
-        display: flex;
-        flex-direction: column;
-        padding: 0px 25px 25px 25px;
-    }
-
-    .main
-    {
-        margin-top: 0px;
-        margin-bottom: 30px;
-        /* border: 1px solid; */
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .main-flex
-    {
-        /* border: 1px solid; */
-        max-width: 100%;
-        flex: 1;
-    }
-    
-    .side
-    {
-        /* border: 1px solid; */
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .side
-    .text
-    {
-        /* border: 1px solid; */
-        /* flex-direction: row; */
-        padding-left: 10px;
-    }
-
-    .side
-    .text
-    h3
-    {
-        /* border: 1px solid; */
-        width: 100%;
-    }
-
-    .side
-    .text
-    p
-    {
-        /* border: 1px solid; */
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: justify;
-    }
-
-}
-
-
-@media screen and (max-width: 580px)
-{
-    h1
-    {
-        font-size: 40px;
-    }
-
-    h2
-    {
-        font-size: 28px;
-    }
-
-    h3
-    {
-        font-size: 20px;
-    }
-
-    p
-    {
-        font-size: 16px;
-    }
-
-    .container
-    {
-        /* background-color: red; */
-    }
-
-    .main
-    {
-        margin: 10px 0;
-    }
-
-    .info
-    .fa-star
-    {
-        /* border: 1px solid; */
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .side
-    .info
-    {
-        /* border: 1px solid; */
-        flex-direction: column; 
-    }
-
-    .side
-    .text
-    h3
-    {
-        /* border: 1px solid; */
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .side
-    .text
-    p
-    {
-        text-align: center;
-    }
-
-
-    /* curriculum */
-    .curriculum
-    .container-flex
-    {
-        padding: 40px 0;
-    }
-
-    .container-flex
-    .details
-    {
-        flex-direction: column;
-    }
-
-    .detail-card
-    .head
-    {
-        height:fit-content;
-        margin: 30px 0 10px;
-    }
-
-    .curriculum
-    .container-flex
-    .detail-card:first-child
-    .head
-    {
-        margin-top: 10px;
-    }
-
-    .socials
-    .circle
-    {
-        font-size: 15px;
-        width: 30px;
-        height: 30px;
-    }
-}
