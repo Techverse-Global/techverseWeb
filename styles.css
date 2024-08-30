@@ -817,7 +817,8 @@ i
     display: list-item;
     display: none;
   }
-/* support us page styling */
+/* ############################support us page styling###################### */
+
 .supportbody {
     margin: 0;
     padding: 0;
@@ -870,7 +871,7 @@ i
 .supportmain {
     border-radius: 10px;
     /* grid-template-rows: 20px; */
-    grid-template-columns:repeat(auto-fill,450px) ;
+    grid-template-columns:repeat(auto-fill,minmax(0vw,450px) );
     display: grid;
     justify-self: center;
     margin-top: 1%;
@@ -902,10 +903,14 @@ i
     /* border: 2px solid darkcyan; */
     border-radius: 4px;
     height: fit-content;
-    /* width: fit-content; */
+    width: fit-content;
     border:2px solid #00d6c4;
     /* grid-column: 2/2; */
     padding: 1px;
+    justify-self: center;
+    width: fit-content;
+    /* display: block; */
+    /* grid-template-columns: repeat(auto-fill, auto); */
 }
 .supportinput input{
     border: none;
@@ -913,15 +918,15 @@ i
     height: 40px;
     /* border-radius: 4px; */
     background-color: #0e635c;
-    width: 250px;
-    min-width: 50px;
+    width: 60%;
+    /* min-width: 50px; */
     font-size: 1.2rem;
     display: inline;
 }
 .currency {
     display: inline;
-    width: 45%;
-
+    /* display: block; */
+    /* background-color: #a2bbdb; */
 }
 label {
     font-weight: 600;
@@ -929,8 +934,8 @@ label {
 #dropdown {
     background-color: #000000;
     color: #00d6c4;
-    width: 93px;
-    min-width: 10%;
+    width: 35%;
+    /* min-width: 20%; */
     border: none;
     height: 40px;
     font-size: 1.2rem;  
@@ -948,13 +953,16 @@ label {
 }
 .result{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 27rem));
+    /* grid-template-columns: repeat(auto-fill, minmax(20rem, 27rem)); */
     /* justify-content: center; */
+    /* background-color: yellowgreen; */
+    /* width: fit-content; */
 }
 .resultb{
-    min-width: 30%;
+    /* min-width: 30%; */
     /* display: inline; */
     font-size: clamp(1rem,1.5rem, 2rem);
+    /* background-color: #d6000e; */
     /* text-decoration: underline; */
 }
 .meetus button{
@@ -966,8 +974,8 @@ label {
     width: 150px;
     height: 50px;
     border: none;
-    text-align: center;
-    margin-left: 45%;
+    /* text-align: center; */
+    /* margin-left: 30vw; */
     margin-bottom: 30px;
 }
 .meetus button:hover{
@@ -980,4 +988,4 @@ label {
     /* grid-column: 2/3; */
     /* min-width: 100px; */
 }
-/* support us page styling */
+/* ########################support us page styling########################*/
