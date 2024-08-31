@@ -383,4 +383,8 @@
         width: 30px;
         height: 30px;
     }
+
+    .show-overlay {
+        width: 100vw;
+    }
 }

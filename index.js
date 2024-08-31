@@ -33,13 +33,15 @@ document.addEventListener('click', (event) => {
 
 
 function closeOverlay() {
-    document.querySelector('.overlay').style.width = '0';
+    // document.querySelector('.overlay').style.width = '0';
+    document.querySelector('.overlay').classList.remove('show-overlay')
     // document.body.classList.remove('no-scroll');
     document.querySelector('.nav-logo').style.display = 'block'
 }
 
 function openOverlay() {
-    document.querySelector('.overlay').style.width = '100%';
+    // document.querySelector('.overlay').style.width = '100%';
+    document.querySelector('.overlay').classList.add('show-overlay')
     // document.body.classList.add('no-scroll');
     document.querySelector('.nav-logo').style.display = 'none'
 }
