@@ -936,7 +936,7 @@ i
 label {
     font-weight: 600;
 }
-#dropdown {
+.invest-currency {
     background-color: #000000;
     color: #00d6c4;
     width: 35%;

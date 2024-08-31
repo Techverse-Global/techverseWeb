@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
 
     <link rel="stylesheet" href="fa-fonts/css/fontawesome.min.css">
@@ -14,53 +14,64 @@
     <link rel="stylesheet" href="fa-fonts/css/brands.css">
 
     <script src="index.js" defer></script>
+    <script src="support.js" defer></script>
 </head>
 <body class="supportbody">
-    <div class="overlay">
+    <div class="overlay ">
         <div class="container">
             <div class="logo">
                 <a href="/">
                     TechVerse
                 </a>
 
-                <i class="fa-solid fa-xmark" id="menuClose"></i>
+                <i class="fa-solid fa-xmark click" id="menuClose"></i>
             </div>
 
             <ul class="overlay-menu-container">
-                <li href="#" class="hover overlay-menu-item">
-                    <span>
-                        All Paths
-                    </span>
-
-                    <i class="fa-solid fa-chevron-right"></i>
+                <li href="#" class="hover  click">
+                    <a href="" class="overlay-menu-item">
+                        <span>
+                            All Paths
+                        </span>
+    
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </li>
-                <li href="#" class="hover overlay-menu-item">
-                    <span>
-                        About
-                    </span>
-
-                    <i class="fa-solid fa-chevron-right"></i>
+                <li href="#" class="hover click">
+                    <a href="" class="overlay-menu-item">
+                        <span>
+                            About
+                        </span>
+    
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </li>
-                <a href="community.html" class="hover overlay-menu-item available">
-                    <span>
-                        Community
-                    </span>
-
-                    <i class="fa-solid fa-chevron-right"></i>
-                </a>
-                <a href="supportus.html" class="hover overlay-menu-item available">
-                    <span>
-                        Support Us
-                    </span>
-
-                    <i class="fa-solid fa-chevron-right"></i>
-                </a>
-                <li href="#" class="hover overlay-menu-item">
-                    <span>
-                        Sign in
-                    </span>
-
-                    <i class="fa-solid fa-chevron-right"></i>
+                <li href="community.html" class="hover available">
+                    <a href="./community.html" class="overlay-menu-item">
+                        <span>
+                            Community
+                        </span>
+    
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="hover available">
+                    <a href="./supportus.html" class="overlay-menu-item">
+                        <span>
+                            Support Us
+                        </span>
+    
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li href="#" class="hover ">
+                    <a href="" class="overlay-menu-item">
+                        <span>
+                            Sign in
+                        </span>
+    
+                        <i class="fa-solid fa-chevron-right"></i>    
+                    </a>
                 </li>
             </ul>
         </div>
@@ -125,13 +136,13 @@
              <h3 class="supporthero">Investment Plan</h3>
              <span class="supporttext">Input Your Investment amount:</span>
             <div class="supportinput">
-                <input type="number">
+                <input type="number" id="invest-amount">
                   <!-- Dropdown label -->
                 <div class="currency">
                 <!-- <label for="dropdown">Currency:</label> -->
-                <select id="dropdown">
-                  <option value="option1">Naira</option>
-                  <option value="option2">CFA</option>
+                <select id="invest-currency" class="invest-currency">
+                  <option value="naira">Naira</option>
+                  <option value="cfa">CFA</option>
                 </select>
                 </div>
             </div>
@@ -150,7 +161,7 @@
             </div>
              <div class="result">
              <div class="resultb re1">Weekly Payment Amount After a Month:</div>
-             <div class="resultb re2">20,000CFA</div>
+             <div class="resultb re2" id="invest-result">₦0.0</div>
              <hr>
             </div>
     </div>
@@ -170,7 +181,7 @@
         </div>
 <hr style="color: gray;">
 
-<!-- <footer>
+<footer>
     <div class="container">
         <div class="container-flex">
             <div class="socials">
@@ -197,7 +208,7 @@
             <small>Powered and secured by Techverse Global</small>
         </div>
     </div>
-</footer> -->
+</footer>
 <script src="script.js"></script>
 
 </body>
