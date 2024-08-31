@@ -3,68 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <link rel="stylesheet" href="fa-fonts/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fa-fonts/css/solid.min.css">
+    <link rel="stylesheet" href="fa-fonts/css/regular.min.css">
+    <link rel="stylesheet" href="fa-fonts/css/brands.css">
+    <title>Support Us</title>
+
+    <script src="index.js" defer></script>
 </head>
 <body class="supportbody">
-    <nav>
+    <div class="overlay">
         <div class="container">
-            <div class="container-flex">
-                <div class="logo">
-                    <a href="/">
-                        TechVerse
+            <div class="logo">
+                <a href="/">
+                    TechVerse
+                </a>
+
+                <i class="fa-solid fa-xmark click" id="menuClose"></i>
+            </div>
+
+            <ul class="overlay-menu-container">
+                <li href="#" class="hover overlay-menu-item click">
+                    <a>
+                        All Paths
                     </a>
-                </div>
 
-                <div class="nav-list">
-                    <div class="nav-list-flex">
-                        <a href="#" class="hover">All Paths</a>
-                        <a href="#" class="hover">About</a>
-                        <a href="#" class="hover">Community</a>
-                        <a href="#" class="hover">Support Us</a>
-                        <a href="#" class="hover">Sign in</a>
-                        <a href="#" class="mode">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-300 group-hover:text-gray-700" role="img" aria-labelledby="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u"><title id="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u">theme icon</title>
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
-                              </svg>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item click">
+                    <a>
+                        About
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item click available">
+                    <a>
+                        Community
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li class="hover overlay-menu-item click available">
+                    <a href="supportus.html">
+                        Support Us
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <li href="#" class="hover overlay-menu-item click">
+                    <a>
+                        Sign in
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav>
+            <div class="container">
+                <div class="container-flex">
+                    <div class="logo nav-logo">
+                        <a href="/">
+                            TechVerse
                         </a>
-                        <a href="#" class="btn">Get Started</a>
-
-                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="nav-list">
+                        <div class="nav-list-flex">
+                            <a href="#" class="hover">All Paths</a>
+                            <a href="#" class="hover">About</a>
+                            <a href="#" class="hover">Community</a>
+                            <a href="supportus.html" class="hover">Support Us</a>
+                            <a href="#" class="hover">Sign in</a>
+                            <a href="#" class="mode">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-300 group-hover:text-gray-700" role="img" aria-labelledby="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u"><title id="a4p1b2bnwxvix8pbdsan9m3bbwpvgl0u">theme icon</title>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+                                  </svg>
+                            </a>
+                            <a href="#" class="btn">Get Started</a>
+    
+                            <i class="fa-solid fa-bars menuOpen" id="menuOpen"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <br>
-    <span class="supportheading">Support Techverse Global By Investment</span>
-    <div class="supportmain">
-             <h3 class="supporthero">Investment Plan</h3>
-             <span class="supporttext">Input Your Investment amount</span>
-            <div class="supportinput">
-                <input type="text">
-                  <!-- Dropdown label -->
-                <label for="dropdown">Choose a currency:</label>
-                <select id="dropdown">
-                  <option value="option1">Naira</option>
-                  <option value="option2">CFA</option>
-                </select>
-            </div>
-             <div class=".supportnotify">
-                <br>
-                <h3>Terms and Conditions</h3>
-             </div>
-             <hr>
-             <div class="tickbox">
-                <li>5% of Invested amount weekly for 12months</li>
-                <li>Payment will start after a month of Investment</li>
-                <li>No Capital Refund after 12months</li>
-                <br>
-             </div>
-             <div class="result">
-             <div class="resultb re1">Weekly Payment Amount After a Month</div>
-             <div class="resultb re2">#18,000 <hr></div>
-            </div>
+    
+
+    <div class="support-container">
+        <span class="supportheading">Support Techverse Global By Investment</span>
+        <div class="supportmain">
+                <h3 class="supporthero">Investment Plan</h3>
+                <span class="supporttext">Input Your Investment amount</span>
+                <div class="supportinput">
+                    <input type="text">
+                    <!-- Dropdown label -->
+                    <label for="dropdown">Choose a currency:</label>
+                    <select id="dropdown">
+                    <option value="option1">Naira</option>
+                    <option value="option2">CFA</option>
+                    </select>
+                </div>
+                <div class=".supportnotify">
+                    <br>
+                    <h3>Terms and Conditions</h3>
+                </div>
+                <hr>
+                <div class="tickbox">
+                    <li>5% of Invested amount weekly for 12months</li>
+                    <li>Payment will start after a month of Investment</li>
+                    <li>No Capital Refund after 12months</li>
+                    <br>
+                </div>
+                <div class="result">
+                <div class="resultb re1">Weekly Payment Amount After a Month</div>
+                <div class="resultb re2">#18,000 <hr></div>
+                </div>
+        </div>
     </div>
     
 </body>

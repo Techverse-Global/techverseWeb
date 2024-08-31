@@ -734,6 +734,11 @@ li a.hover:hover
 }
 
 
+.click {
+    cursor:pointer;
+}
+
+
 
 
 
@@ -919,3 +924,9 @@ label {
     /* min-width: 100px; */
 }
 /* support us page styling */
+
+
+.support-container {
+    position: fixed;
+    top: 5%;
+}
