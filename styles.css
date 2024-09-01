@@ -1082,10 +1082,14 @@ label {
     height: 100vh;
     margin-top: 0px;   
 }
+.www{
+    text-align: center;
+}
 .communitymain h1 a button{
-    width: 300px;
+    margin-top: 10%;
+    width: 80%;
     height: 70px;
-    font-size: 1.5rem;
+    font-size: clamp(1rem,1.3rem, 1.5rem);
     background-color: #01221f;
     color: #00d6c4;
     font-weight: bold;
@@ -1134,5 +1138,10 @@ b{
     display: block;
     font-weight: bolder;
     color: #00d6c4;
+}
+.cumend {
+    background: linear-gradient(45deg, #000000, #0b2422 50%, #124f4a);
+    text-align: center;
+    padding: 3%;
 }
 /* ########################COMMUNITY page styling########################*/
