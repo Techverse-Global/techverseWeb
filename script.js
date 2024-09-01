@@ -45,3 +45,21 @@ function toggleDropdown(id) {
 //     dropdownContent.style.display = 'none';
 //   }
 // }
+// ###########support page##############
+    // Get all the content headers and content areas
+    const headers = document.querySelectorAll(".content2 h2");
+    const contentAreas = document.querySelectorAll(".content2a");
+
+    // Add click event listeners to each header
+    headers.forEach((header, index) => {
+        header.addEventListener("click", () => {
+            // Hide all content areas first
+            contentAreas.forEach(content => content.classList.remove("active"));
+
+            // Show the clicked content area
+            contentAreas[index].classList.add("active");
+        });
+    });
+
+    // Show the first content by default
+    contentAreas[0].classList.add("active");

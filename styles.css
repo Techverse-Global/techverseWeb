@@ -840,7 +840,7 @@ i
     background-repeat: repeat;
     background-position: center; */
     height: fit-content;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     /* color: #00d6c4; */
 }
 .content1 img {
@@ -856,11 +856,42 @@ i
 .content1header{
     text-align: center;
 }
-.content2{
-    margin-top: 10%;
+/* .content2 div h1 {
+    background: (45deg, #ac50ef, #7059fb 50%, #2ecff6);
+    width: fit-content;
+    height: fit-content;
 }
-.content2header {
-    text-align: left;
+.dream-faq-area dt:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
+.content2 div h2{
+    cursor: pointer;
+    padding: 7px 10px 0px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(45deg, #0e635c, #073430 50%, #00d6c4);
+    color: #fff;
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    border-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    width: fit-content;
+}
+.content2 .content2a{
+    /* cursor: pointer; */
+    padding: 0px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(45deg, #000000, #0b2422 50%, #124f4a);
+    color: #fff;
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    /* display: none; */
+    /* width: fit-content; */
 }
 .supportheading{
     font-size: clamp(2rem, 2rem, 2.5rem);
@@ -869,8 +900,26 @@ i
 }
 
 .content3 li {
-    list-style:inside;
+    /* list-style:none; */
     margin-left: 1%;
+}
+.content3 li::before{
+    content: '✓';
+    left: 0;
+    color: #00BCD4;
+    font-weight: bolder;
+}
+.content2a .content2aa::before {
+    content: '✓';
+    left: 0;
+    color: #00BCD4;
+    font-weight: bolder;
+}
+.content2a {
+    display: none;
+}
+.active {
+    display: block;
 }
 
 .supportmain {
@@ -955,6 +1004,12 @@ label {
 .tickbox li {
     font-size: larger;
     list-style-type:square;
+    list-style: none;
+}
+.tickbox li::before{
+    content: '✓';
+    left: 0;
+    color: #00BCD4;
 }
 .result{
     display: grid;
@@ -972,15 +1027,19 @@ label {
 }
 .meetus button{
     background-color: #0e635c;
-    border-radius: 6px;
+    border-radius: 10px;
     color: white;
     font-weight: bolder;
     font-size: 1.3rem;
-    width: 150px;
-    height: 50px;
+    width: 210px;
+    height: 70px;
     border: none;
+    text-align: center;
+    /* padding: 5%; */
     /* text-align: center; */
     /* margin-left: 30vw; */
+}
+.end{
     margin-bottom: 30px;
 }
 .meetus button:hover{
@@ -992,6 +1051,13 @@ label {
     margin-top: 5%;
     /* grid-column: 2/3; */
     /* min-width: 100px; */
+}
+.divend{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
 }
 /* ########################support us page styling########################*/
 /* ########################COMMUNITY page styling########################*/
